@@ -23,24 +23,24 @@
     </div>
 
     <header
-      class="sticky top-0 z-50 w-full px-6 py-4 flex items-center justify-between"
+      class="md:sticky top-0 z-50 w-full px-6 py-4 flex flex-col items-center md:flex-row md:items-center md:justify-between"
     >
       <div class="flex-shrink-0">
         <img
           src="logo.png"
           alt="Logo"
-          class="w-32 h-auto hover:opacity-80 transition-opacity opacity-100"
+          class="w-32 h-auto hover:opacity-80 transition-opacity"
         />
       </div>
 
-      <nav class="hidden md:block">
+      <nav class="md:w-auto md:self-center self-start">
         <ul
-          class="flex items-center gap-8 px-12 py-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-full shadow-lg shadow-black/20"
+          class="flex flex-row md:w-auto md:flex-row items-center gap-4 md:gap-8 px-6 py-3 md:px-12 md:py-6 bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl md:rounded-full shadow-lg shadow-black/20"
         >
-        <li>
+          <li>
             <a
               href="index.html"
-              class="text-text/70 hover:text-text transition-colors text-sm font-medium"
+              class="text-accent2 hover:text-text transition-colors text-sm font-medium"
               >Home</a
             >
           </li>
@@ -82,22 +82,6 @@
           Get Started
         </button>
       </div>
-
-      <button class="md:hidden text-text cursor-pointer">
-        <svg
-          class="size-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M4 6h16M4 12h16m7 6H4"
-          ></path>
-        </svg>
-      </button>
     </header>
     <main>
       <article
@@ -175,16 +159,16 @@
       </article>
     </main>
     <footer
-      class="flex justify-between items-center w-full px-6 py-4 gap-4 mt-4 bg-white/5 backdrop-blur-md border border-white/10 shadow-lg shadow-black/20"
+      class="flex justify-between items-center w-full px-3 md:px-6 py-2 md:py-4 gap-2 md:gap-4 mt-4 bg-white/5 backdrop-blur-md border border-white/10 shadow-lg shadow-black/20 rounded-2xl"
     >
       <div class="flex-shrink-0">
         <img
           src="logo.png"
           alt="Logo"
-          class="w-32 h-auto hover:opacity-80 transition-opacity"
+          class="md:w-30 w-20 h-auto hover:opacity-80 transition-opacity justify-self-start"
         />
       </div>
-      <p class="text-text text-[0.85rem]">All Rights Reserved &reg;</p>
+      <p class="text-text text-[0.75rem]">All Rights Reserved &reg;</p>
       <div class="flex gap-4">
         <a
           href="https://discord.com/"
@@ -196,7 +180,7 @@
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 fill-text group-hover:fill-accent transition-colors duration-300"
+            class="w-5 h-5 fill-text group-hover:fill-accent transition-colors duration-300"
           >
             <title>Discord</title>
             <path
@@ -214,7 +198,7 @@
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 fill-text group-hover:fill-black transition-colors duration-300"
+            class="w-5 h-5 fill-text group-hover:fill-black transition-colors duration-300"
           >
             <title>GitHub</title>
             <path
@@ -232,7 +216,7 @@
             role="img"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 fill-text group-hover:fill-accent2 transition-colors duration-300"
+            class="w-5 h-5 fill-text group-hover:fill-accent2 transition-colors duration-300"
           >
             <title>Facebook</title>
             <path
